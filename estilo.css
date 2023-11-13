@@ -67,7 +67,6 @@ a
     color: white;
 }
 
-
 .portfolio {
     padding: var(--medium-default-padding) var(--large-default-padding);
     text-align: center;
@@ -112,7 +111,6 @@ a
 }
 
 
-
 article a{
     text-decoration: none;
 }
@@ -132,4 +130,47 @@ article a:hover{
 
 .rodape p{
     font-size: 20px;
+}
+@media only screen and (max-width: 767px) {
+    body {
+        font-size: 16px; /* Ajuste o tamanho da fonte para dispositivos móveis */
+    }
+
+    #principal {
+        width: 100%; /* Ocupar a largura total da tela */
+        padding: 1em; /* Adicionar algum espaço ao redor do conteúdo */
+    }
+
+    .header-top {
+        flex-direction: column; /* Colocar o logotipo acima da navegação */
+        align-items: center; /* Centralizar os itens no eixo transversal */
+    }
+
+    .logotipo {
+        margin: 1em 0; /* Ajustar a margem do logotipo */
+    }
+
+    .header-nav {
+        margin-top: 1em; /* Adicionar espaço entre o logotipo e a navegação */
+    }
+
+    .header-nav li {
+        display: block; /* Exibir cada item de navegação em uma nova linha */
+        margin: 1em 0; /* Adicionar espaço entre os itens de navegação */
+        text-align: center; /* Centralizar o texto */
+    }
+
+    .portfolio,
+    .about,
+    .gallery-card {
+        padding: 2em; /* Ajustar o preenchimento para melhor legibilidade */
+    }
+
+    .footer {
+        padding: 1em; /* Ajustar o preenchimento do rodapé */
+    }
+
+    .rodape p {
+        font-size: 14px; /* Ajustar o tamanho da fonte no rodapé */
+    }
 }
